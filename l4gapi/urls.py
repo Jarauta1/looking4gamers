@@ -6,7 +6,7 @@ from . import views
 
 router = routers.DefaultRouter()
 
-router.register((r'servers', views.ServerViewSet))
+router.register(r'servers', views.ServerViewSet)
 
 
 # We include url login
