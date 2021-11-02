@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'looking4gamers.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME':  'servergaming',
+        'USER': 'postgres',
+        'PASSWORD': 'dj18dj18',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
