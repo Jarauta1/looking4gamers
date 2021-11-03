@@ -138,15 +138,15 @@ _Y en los canales por topic:_
 
 `/api-auth` Bajo esta ruta están todas aquellas relacionadas con la sesión del usuario:
 
-```
-    `/login` : Iniciar una sesión
-    `/logout` : Cerrar sesión
-    `/user` : Recibir la información del usuario activo 
-    `/registration` : Registrar un nuevo usuario
-    `/password/reset/` : Resetear la contraseña
-    `/password/reset/confirm/` : Confirmar el reseteo de la contraseña
-    `/password/change/` : Cambiar la contraseña
-```
+
+    - `/login` : Iniciar una sesión
+    - `/logout` : Cerrar sesión
+    - `/user` : Recibir la información del usuario activo 
+    - `/registration` : Registrar un nuevo usuario
+    - `/password/reset/` : Resetear la contraseña
+    - `/password/reset/confirm/` : Confirmar el reseteo de la contraseña
+    - `/password/change/` : Cambiar la contraseña
+
 
 ## Modelos / Models
 
