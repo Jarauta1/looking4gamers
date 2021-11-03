@@ -1,5 +1,6 @@
-# We import the views
+# We import the views and filter
 from rest_framework import viewsets
+from rest_framework.filters import SearchFilter, OrderingFilter
 
 # We import the created serializers
 from .serializers import ServerSerializer, GroupSerializer, UsersSerializer, ChannelSerializer, MessageSerializer
@@ -32,6 +33,10 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all().order_by('group_id')
     serializer_class = GroupSerializer
 
+    # Filter to can search by group name
+    filter_backends = (SearchFilter, OrderingFilter)
+    search_fields = ['group_name']
+
 
 class UsersViewSet(viewsets.ModelViewSet):
     queryset = Users.objects.all().order_by('user_id')
@@ -46,3 +51,7 @@ class MessageViewSet(viewsets.ModelViewSet):
 class ChannelViewSet(viewsets.ModelViewSet):
     queryset = Channel.objects.all().order_by('channel_id')
     serializer_class = ChannelSerializer
+
+    # Filter to can search by topic channel
+    filter_backends = (SearchFilter, OrderingFilter)
+    search_fields = ['topic']
