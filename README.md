@@ -121,11 +121,11 @@ _Este es el listado de rutas:_
 
 _Las rutas para acceder a cada apartado son:_
 
-`/servers` : GET, POST, PATCH, DELETE
-`/users` : GET, POST, PATCH, DELETE
-`/groups` : GET, POST, PATCH, DELETE
-`/messages` : GET, POST, PATCH, DELETE
-`/channels` : GET, POST, PATCH, DELETE
+- `/servers` : GET, POST, PATCH, DELETE
+- `/users` : GET, POST, PATCH, DELETE
+- `/groups` : GET, POST, PATCH, DELETE
+- `/messages` : GET, POST, PATCH, DELETE
+- `/channels` : GET, POST, PATCH, DELETE
 
 _En los grupos se puede realizar búsqueda por nombre de grupo:_
 
