@@ -138,14 +138,24 @@ _Y en los canales por topic:_
 
 `/api-auth` Bajo esta ruta están todas aquellas relacionadas con la sesión del usuario:
 
-
 - `/login` : Iniciar una sesión
 - `/logout` : Cerrar sesión
+
+_Ejemplo de ruta:_
+
+`/api-auth/login`
+
+`/auth` Bajo esta ruta están:
+
 - `/user` : Recibir la información del usuario activo 
 - `/registration` : Registrar un nuevo usuario
 - `/password/reset/` : Resetear la contraseña
 - `/password/reset/confirm/` : Confirmar el reseteo de la contraseña
 - `/password/change/` : Cambiar la contraseña
+
+_Ejemplo de ruta:_
+
+`/auth/registration`
 
 
 ## Modelos / Models
@@ -201,7 +211,20 @@ _Este modelo incluye los siguientes campos:_
 - members: JSON con todos los usuarios que pertenecen al grupo
 - channels: JSON con todos los canales que posee el grupo
 ```
+
 ### Channel
+
+_Este modelo incluye los siguientes campos:_
+
+```
+- channel_id: Identificador del canal
+- group_id: Identificador del grupo donde ha sido creado el canal
+- channel_name: Nombre del canal
+- topic: Topic del canal (se puede realizar búsquedas)
+- wall: JSON donde almacenar todos los mensajes para mostrarlos (muro)
+```
+
+### Message
 
 _Este modelo incluye los siguientes campos:_
 
